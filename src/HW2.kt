@@ -1,60 +1,54 @@
-
 import java.util.Scanner
 fun main() {
-/*
-    print("healthPoints ")
-    var healthPoints = readLine()!!.toDouble() //readLine()
 
-    val karma = (Math.pow(Math.random(), (110 - healthPoints) / 100.0) * 20 ).toInt()
+    // Question 1
+    println("Question 1")
+    println("")
+    print("Choose the operation (+,-,*,/ or % ) : ")
+    var op = readLine()!! //readLine()
 
+    print("Please Enter first number :")
+    var num1 = readLine()!!.toInt() //readLine()
 
-when{
-    karma in 0 .. 5 -> println("red")
-    karma in 6 .. 10 -> println("orange")
-    karma in 11 .. 15 -> println("purple")
-    karma in 16 .. 20 -> println("green")
-    else -> println("green")
-} // end when
-    */
+    print("Please Enter second number :")
+    var num2 = readLine()!!.toInt() //readLine()
 
-    println("enter 3 numbers to order ")
-    var num1 = readLine()!!.toDouble() //readLine()
-    var num2 = readLine()!!.toDouble() //readLine()
-    var num3 = readLine()!!.toDouble() //readLine()
-
-
-    println("the order is ")
-    if(num1 <= num2 && num1 <= num3){ // if 1 is smaller
-        println("$num1")
-           if (num2 <= num3)  {
-            println("$num2")
-            println("$num3") }
-        else {
-        println("$num3")
-        println("$num2") }
+    if (op == "+") {
+        println("Result of " + num1 + " + " + num2 + " = "+(num1+num2))
     }
-    else
-    if(num2 < num1&& num2 <= num3){ // if 2 is smaller
-        println("$num2")
-        if (num1 <= num3)  {
-            println("$num1")
-            println("$num3") }
-        else {
-            println("$num3")
-            println("$num1") }
+    else if (op == "-") {
+        println("Result of " + num1 + " - " + num2 + " = "+(num1-num2))
     }
-    else
-    if(num3< num2&& num3<=num1){ // if 3 is smaller
-        println("$num3")
-        if (num1 <= num2)  {
-            println("$num1")
-            println("$num2") }
-        else {
-            println("$num2")
-            println("$num1") }
+    else if (op == "*") {
+        println("Result of " + num1 + " * " + num2 + " = "+(num1*num2))
+    }    else if (op == "/") {
+        println("Result of " + num1 + " / " + num2 + " = "+(num1/num2))
+    } else if (op == "%") {
+        println("Result of " + num1 + " % " + num2 + " = "+(num1%num2))
     }
 
 
-} // end main
+    // Question 2
+    println("")
+    println("")
+    println("Question 2")
+    println("")
+    print("Please enter the salary of employee : ")
+    var salary = readLine()!!.toDouble() //readLine()
+
+    print("Performance rating by 1,2 or 3:")
+    var perfo = readLine()!!.toInt() //readLine()
 
 
+    if (perfo == 1) {
+        println("The new salary of employee is " + ((salary+(salary*6)/100)))
+    }
+    else if (perfo == 2) {
+        println("The new salary of employee is " + ((salary+(salary*4)/100)))
+    }
+    else if (perfo == 3) {
+        println("The new salary of employee is " + ((salary+(salary*1.5)/100)))
+    }
+
+
+} // End main
