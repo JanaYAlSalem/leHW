@@ -1,27 +1,55 @@
+
 import java.util.Scanner
-
 fun main() {
-    println("Enter number of apple ")
-    var appleNO = readLine()!!.toInt() //readLine()
-    var appleD = 0
-    var reApple = 0
+
+    // Question 1
+    println("Question 1")
+    println("")
+    print("Choose the operation (+,-,*,/ or % ) : ")
+    var op = readLine()!! //readLine()
+
+    print("Please Enter first number :")
+    var num1 = readLine()!!.toInt() //readLine()
+
+    print("Please Enter second number :")
+    var num2 = readLine()!!.toInt() //readLine()
+
+    if (op == "+") {
+        println("Result of " + num1 + " + " + num2 + " = "+(num1+num2))
+    }
+    else if (op == "-") {
+        println("Result of " + num1 + " - " + num2 + " = "+(num1-num2))
+    }
+    else if (op == "*") {
+        println("Result of " + num1 + " * " + num2 + " = "+(num1*num2))
+    }    else if (op == "/") {
+        println("Result of " + num1 + " / " + num2 + " = "+(num1/num2))
+    } else if (op == "%") {
+        println("Result of " + num1 + " % " + num2 + " = "+(num1%num2))
+    }
 
 
-    appleD = appleNO / 12
-    reApple = appleNO % 12
+    // Question 2
+    println("")
+    println("")
+    println("Question 2")
+    println("")
+    print("Please enter the salary of employee : ")
+    var salary = readLine()!!.toDouble() //readLine()
 
-    println(appleD)
-    println(reApple)
+    print("Performance rating by 1,2 or 3:")
+    var perfo = readLine()!!.toInt() //readLine()
 
 
+    if (perfo == 1) {
+        println("The new salary of employee is " + ((salary+(salary*6)/100)))
+    }
+    else if (perfo == 2) {
+        println("The new salary of employee is " + ((salary+(salary*4)/100)))
+    }
+    else if (perfo == 3) {
+        println("The new salary of employee is " + ((salary+(salary*1.5)/100)))
+    }
 
-//sum()
-} // end main
 
-/*
-fun sum (){
-    var x = 2
-    var y = 3
-    var r = x+y
-    println(r)
-} // end fun*/
+}
