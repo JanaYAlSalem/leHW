@@ -109,7 +109,7 @@ fun getOrderNumber( num1 : Double ,num2 : Double ,num3 : Double ) { // extend Ex
             }
 
 } // End getOrderNumber fun
-
+/*
 fun getmiddleNumber( num1 : Double ,num2 : Double ,num3 : Double ) { // extend Example 4
 
     println("the Middle is ")
@@ -125,3 +125,4 @@ fun getmiddleNumber( num1 : Double ,num2 : Double ,num3 : Double ) { // extend E
 
 } // end getmiddleNumber fun
 
+ */
