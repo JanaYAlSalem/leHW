@@ -1,13 +1,6 @@
 fun getmiddleNumber( num1 : Double ,num2 : Double ,num3 : Double ) { // extend Example 4
 
-    var num1 = 0
-    var num2 = 0
-    var num3 = 0
-
-
-
     println("the Middle is ")
-
     if(num1 >= num2 && num1 <=num3){ // if 1 is middle
         println("$num1")}
     else
@@ -16,5 +9,18 @@ fun getmiddleNumber( num1 : Double ,num2 : Double ,num3 : Double ) { // extend E
         else
             if(num3 >= num1 && num3 <=num2){ // if 3 is middle
                 println("$num3")}
-
 } // end getmiddleNumber fun
+
+
+fun printInfo () {
+
+    println("Name : Jana")
+    println("age : 23")
+    println("email : JanaAlSalem@outlook.sa")
+
+
+
+
+}
+
+

@@ -16,42 +16,6 @@ when{
 } // end when
     */
 
-    println("enter 3 numbers to order ")
-    var num1 = readLine()!!.toDouble() //readLine()
-    var num2 = readLine()!!.toDouble() //readLine()
-    var num3 = readLine()!!.toDouble() //readLine()
-
-
-    println("the order is ")
-    if(num1 <= num2 && num1 <= num3){ // if 1 is smaller
-        println("$num1")
-        if (num2 <= num3)  {
-            println("$num2")
-            println("$num3") }
-        else {
-            println("$num3")
-            println("$num2") }
-    }
-    else
-        if(num2 < num1&& num2 <= num3){ // if 2 is smaller
-            println("$num2")
-            if (num1 <= num3)  {
-                println("$num1")
-                println("$num3") }
-            else {
-                println("$num3")
-                println("$num1") }
-        }
-        else
-            if(num3< num2&& num3<=num1){ // if 3 is smaller
-                println("$num3")
-                if (num1 <= num2)  {
-                    println("$num1")
-                    println("$num2") }
-                else {
-                    println("$num2")
-                    println("$num1") }
-            }
-
+    printInfo()
 
 } // end main
