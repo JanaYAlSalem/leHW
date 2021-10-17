@@ -3,7 +3,7 @@ fun main() {
 
      // Q1: chapter 3
     val name = "Madrigal"
-    var healthPoints = 89
+    var healthPoints = 55
     val isBlessed = true
     val isImmortal = false
     val karma = (Math.pow(Math.random(), (110 - healthPoints) / 100.0) * 20 ).toInt()
