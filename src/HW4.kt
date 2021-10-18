@@ -1,3 +1,6 @@
+import kotlin.random.Random
+import kotlin.random.nextInt
+
 fun main() {
 
 
@@ -24,12 +27,32 @@ fun main() {
     }
     println(PrintName())
 
+    // The it keyword page 72
+   var countA = "Jana AlSalem".count({ it == 'A' || it == 'a' })
+     println("The number of 'a' is : $countA")
 
 
-
-    val greetingFunction: () -> String = {
-        val currentYear = 2018
-        "Welcome to SimVillage, Mayor! (copyright $currentYear)"
+    // example of lambdas at ch5 on page 75
+    val FunB = { NameOfstu: String, IdOfstu: Int ->  // sub fun
+        "$NameOfstu, and the id is $IdOfstu"
     }
 
-}
+    // calling superfun
+    println(FunA("Jana", FunB))
+
+
+    // Q2 : write a exceptionexception code (throw)
+    var x = 3
+    if (x>=5)
+        println(" it 5 or more")
+    else
+        throw Exception ("it is less than 5")
+
+} // end main
+
+fun FunA(NameofUn: String, SubFun: (String, Int) -> String): String {  // super fun
+    var IdR = Random.nextInt(1..6)
+    return "STU Name is " + SubFun("Jana ", IdR)
+
+
+} // end super fun
