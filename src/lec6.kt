@@ -3,6 +3,7 @@ import kotlin.random.nextInt
 
 fun main() {
 
+
     // example of lambdas at ch5 on page 75
 
     val SubFun = { NameOfstu: String, IdOfstu: Int ->  // sub fun
