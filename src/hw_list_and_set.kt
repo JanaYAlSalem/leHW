@@ -37,7 +37,7 @@ fun main() {
 
     // PART Options
    // Create a text file and read it
-    var NumberFile = File("data/Maximum.txt").readText().split("/n")
+    var NumberFile = File("data/Maximum.txt").readText().split(",")
     println(NumberFile)
     println("=====================")
 
@@ -45,6 +45,22 @@ fun main() {
     var MaximumNumberFile = NumberFile.toMutableList()
 
     // return the maximum number
+    var i = 0
+    var Biggest = MaximumNumberFile.get(i)
 
+    for (item in MaximumNumberFile) {
+        var ele = MaximumNumberFile.get(MaximumNumberFile.indexOf(item))
+
+        if (i < MaximumNumberFile.size) {
+        if (Biggest >= ele)
+            Biggest = Biggest
+        else
+            Biggest = ele
+
+            i++
+         }
+    }
+
+    println("The biggest number is $Biggest")
 }
 
