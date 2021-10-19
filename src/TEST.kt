@@ -1,21 +1,14 @@
 import java.util.Scanner
+const val TAVERN_NAME = " Folly\"'s Taernyl's"
 fun main() {
-/*
-    print("healthPoints ")
-    var healthPoints = readLine()!!.toDouble() //readLine()
-
-    val karma = (Math.pow(Math.random(), (110 - healthPoints) / 100.0) * 20 ).toInt()
+    placeOrder("tea,Dragon's Breath,5.91")
+    println("HIkkkku\b ")
 
 
-when{
-    karma in 0 .. 5 -> println("red")
-    karma in 6 .. 10 -> println("orange")
-    karma in 11 .. 15 -> println("purple")
-    karma in 16 .. 20 -> println("green")
-    else -> println("green")
-} // end when
-    */
 
-    printInfo()
-
-} // end main
+}
+private fun placeOrder(menuData: String) {
+    val indexOfApostrophe = TAVERN_NAME.indexOf('\"')
+    val tavernMaster = TAVERN_NAME.substring(0 until indexOfApostrophe)
+    println("Madrigal speaks with $tavernMaster about their order.")
+}
